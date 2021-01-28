@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        sinhvien = {
+            "masv": 1,
+            "tensv": "abc",
+            "gmail": "ad@itc.edu.vn",
+        }
+        console.log(sinhvien.masv, sinhvien.tensv, sinhvien.gmail,);
+        s = `
+        <table class="table" border="1">
+            <thead>
+                <tr>
+                    <th>masv</th>
+                    <th>tensv</th>
+                    <th>gmail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row"> ${sinhvien.masv}</td>
+                    <td>${sinhvien.tensv}</td>
+                    <td>${sinhvien.gmail}</td>
+                </tr>
+            </tbody>
+        </table> `
+        document.write(s)
+    </script>
+</body>
+
+</html>
